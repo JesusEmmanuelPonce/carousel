@@ -1,0 +1,265 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    margin: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.destinations {
+    display: flex;
+    justify-content: center;
+    font-family: 'Gotham Pro';
+
+    padding: 16px;
+    margin-top: 60px;
+}
+
+.destinations__contentMobile {
+    display: none;
+}
+
+.destinations__contentDesktop {
+    background-image: url(../img/destinations_background.png);
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 10px;
+    color: #fff;
+    height: 470px;
+    max-width: 970px;
+    padding: 89px 40px;
+    width: 100%;
+}
+
+.destinations__contentDesktop-header {
+    align-items: flex-end;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.destinations__contentDesktop-header article {
+    max-width: 530px;
+    width: 100%;
+}
+
+.destinations__contentDesktop-header article h2 {
+    font-family: 'Gotham Pro';
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.destinations__contentDesktop-header article p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+.destinations__contentDesktop-header .see-destinations {
+    border-radius: 4px;
+    background: #FFFFFF;
+    border: 0.5px solid #64186D;
+    backdrop-filter: blur(2px);
+    color: #612066;
+    font-family: 'Gotham Pro';
+    font-size: 14px;
+    padding: 10px 24px;
+    text-align: center;
+}
+
+/* glide classes */
+.glide {
+    margin-top: 40px;
+}
+
+.glide__slide {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    min-height: 320px;
+    margin-bottom: 10px;
+}
+
+.glide__slide {
+    transition: transform 0.5s ease-in-out;
+}
+
+.glide__slide-photo {
+    border-radius: 10px 10px 0 0;
+    height: 196px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.glide__slide-content {
+    padding: 19px 16px;
+}
+
+.glide__slide-content h4 {
+    color: #1A1E23;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 13px;
+}
+
+.glide__slide-content p {
+    color: #566D77;
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 12px;
+}
+
+.glide__slide-content a {
+    align-items: center;
+    display: flex;
+    gap: 8.1px;
+    
+    color: #CE0E2D;
+    font-family: 'Gotham Pro';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 11px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.glide__slide-content a svg {
+    width: 8px;
+}
+
+.glide__customArrow {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.glide__customArrow .customArrow-prev,
+.glide__customArrow .customArrow-next {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    background: linear-gradient(0deg, #FFFFFF 0%, #F0F2F4 100%);
+    border: 1px solid #D8DFE3;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 36px;
+    outline: none;
+    width: 36px;
+}
+
+.glide__bullets {
+    display: flex;
+    gap: 12px;
+
+    margin: 0 24px;
+}
+
+.glide__bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: #D0DBE0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.glide__bullet--active {
+    background-color: #612066;
+    border: none;
+    width: 8px;
+    height: 8px;
+}
+
+.glide__bullet:hover,
+.glide__bullet--active:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 510px) {
+    .destinations {
+        margin-top: 40px;
+    }
+
+    .destinations__contentDesktop {
+        display: none;
+    }
+
+    .destinations,
+    .destinations__contentMobile {
+        display: block;
+    }
+
+    .destinations__contentMobile-title {
+        color: #000000;
+        font-family: 'Gotham Pro';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 17px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .itemTravels {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .itemTravels:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .itemTravels .glide__slide-content h4 {
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    .itemTravels .glide__slide-content p {
+        margin-top: 8px;
+    }
+
+    .itemTravels .glide__slide-content a {
+        align-items: center;
+        display: flex;
+        gap: 8.1px;
+        margin-top: 9px;
+    }
+
+    .itemTravels .glide__slide-content a svg {
+        color: #CE0E2D;
+    }
+
+    .destinations__contentMobile-allDestinations {
+        background: #FFFFFF;
+        border: 0.5px solid #64186D;
+        backdrop-filter: blur(2px);
+        border-radius: 4px;
+        color: #612066;
+        display: block;
+        font-family: 'Gotham Pro';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 13px;
+        margin-top: 32px;
+        padding: 14px;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+    }
+}

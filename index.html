@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+    <body>
+       <section class="destinations">
+            <section class="destinations__contentDesktop">
+
+                <header class="destinations__contentDesktop-header">
+                    <article>
+                        <h2>Destinos principales</h2>
+                        <p>In commodo vehicula metus, sed lacinia metus pulvinar eu aenean egestas odio eget nibh tincidunt rutrum.</p>
+                    </article>
+                    <span class="see-destinations">Ver todos los destinos</span>
+                </header>
+
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides" id="desktop-container"></ul>
+                    </div>
+
+                    <section class="glide__customArrow">
+                        <button class="customArrow-prev" id="prev">
+                            <img src="img/arrow-left.svg" alt="arrow left">
+                        </button>
+
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                            <button class="glide__bullet" data-glide-dir="=3"></button>
+                            <button class="glide__bullet" data-glide-dir="=4"></button>
+                            <button class="glide__bullet" data-glide-dir="=5"></button>
+                            <button class="glide__bullet" data-glide-dir="=6"></button>
+                            <button class="glide__bullet" data-glide-dir="=7"></button>
+                        </div>
+
+                        <button class="customArrow-next" id="next">
+                            <img src="img/arrow-right.svg" alt="arrow right">
+                        </button>
+                    </section>
+                </div>
+            </section>
+
+            <section class="destinations__contentMobile">
+                <h2 class="destinations__contentMobile-title">Destinos Principales</h2>
+
+                <ul class="destinations__contentMobile-listTravels" id="mobile-container"></ul>
+
+                <a href="/#" class="destinations__contentMobile-allDestinations">Ver todos los destinos</a>
+            </section>
+       </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script src="https://unpkg.com/@glidejs/glide"></script>
+        <script src="js/destinations.js"></script>
+        <script src="js/glade.js"></script>
+    </body>
+</html>
